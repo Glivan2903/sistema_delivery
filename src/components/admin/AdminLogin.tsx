@@ -15,7 +15,7 @@ interface AdminLoginProps {
 }
 
 export const AdminLogin = ({ onLogin, onClose, isLoading, setIsLoading }: AdminLoginProps) => {
-  const [credentials, setCredentials] = useState({ email: 'marromlanches@gmail.com', password: '' });
+  const [credentials, setCredentials] = useState({ email: '', password: '' });
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
